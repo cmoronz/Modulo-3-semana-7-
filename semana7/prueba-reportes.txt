@@ -1,0 +1,12 @@
+Al enviar una solicitud POST a /reportes, el servidor crea un nuevo objeto con un id, tipo y descripción, y lo almacena en la lista en memoria.
+
+Al consultar GET /reportes, se devuelve el arreglo completo con los reportes registrados hasta ese momento.
+
+Por ejemplo, si se envía un reporte de infraestructura, la respuesta del GET podría verse así:
+[
+  {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público"
+  }
+]
